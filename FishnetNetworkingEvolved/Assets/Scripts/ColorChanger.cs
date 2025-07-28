@@ -1,18 +1,16 @@
 using FishNet.Object;
 using FishNet.Object.Synchronizing;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ColorChanger : NetworkBehaviour
 {
-    public readonly SyncVar<Color> color = new SyncVar<Color>();
+    public readonly SyncVar<Color> color = new();
     private SpriteRenderer _spriteRenderer;
 
     private void Awake()
     {
         color.OnChange += OnColorChanged;
-        _spriteRenderer = GetComponent<SpriteRenderer>();    
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
