@@ -3,7 +3,7 @@ using UnityEngine;
 
 // This script will be a NetworkBehaviour so that we can use the 
 // OnStartClient override.
-public class PlayerCamera : NetworkBehaviour
+public class PlayerCameraLocal : NetworkBehaviour
 {
 	[SerializeField] private Camera cameraPrefab;
 	[SerializeField] private Transform cameraHolder;
