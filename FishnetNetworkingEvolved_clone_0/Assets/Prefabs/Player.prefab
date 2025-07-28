@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4765130878811110882}
   - component: {fileID: 538732811839565114}
+  - component: {fileID: 1191997864893377495}
   - component: {fileID: -5101729450839348192}
   - component: {fileID: -2403219442511248126}
   - component: {fileID: 155647582274137986}
   - component: {fileID: 7081752917375696315}
-  - component: {fileID: 1191997864893377495}
+  - component: {fileID: 156026457314109218}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -89,6 +90,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1191997864893377495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950859869150333006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 3
+  _addedNetworkObject: {fileID: -5101729450839348192}
+  _networkObjectCache: {fileID: -5101729450839348192}
+  _componentConfiguration: 0
+  _synchronizeParent: 0
+  _packing:
+    Position: 1
+    Rotation: 1
+    Scale: 0
+  _interpolation: 2
+  _extrapolation: 2
+  _enableTeleport: 0
+  _teleportThreshold: 1
+  _clientAuthoritative: 1
+  _sendToOwner: 1
+  _interval: 1
+  _synchronizePosition: 1
+  _positionSensitivity: 0.001
+  _positionSnapping:
+    X: 0
+    Y: 0
+    Z: 0
+  _synchronizeRotation: 1
+  _rotationSnapping:
+    X: 0
+    Y: 0
+    Z: 0
+  _synchronizeScale: 1
+  _scaleSensitivity: 0.001
+  _scaleSnapping:
+    X: 0
+    Y: 0
+    Z: 0
 --- !u!114 &-5101729450839348192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +157,7 @@ MonoBehaviour:
   - {fileID: -2403219442511248126}
   - {fileID: 155647582274137986}
   - {fileID: 7081752917375696315}
+  - {fileID: 1191997864893377495}
   InitializedParentNetworkBehaviour: {fileID: 0}
   InitializedNestedNetworkObjects: []
   RuntimeParentNetworkBehaviour: {fileID: 0}
@@ -190,7 +237,7 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: -5101729450839348192}
   _networkObjectCache: {fileID: -5101729450839348192}
   moveSpeed: 5
---- !u!114 &1191997864893377495
+--- !u!114 &156026457314109218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,39 +246,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 950859869150333006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
+  m_Script: {fileID: 11500000, guid: fee2886fda8f56c41ad29b9773f28441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 255
   _addedNetworkObject: {fileID: -5101729450839348192}
   _networkObjectCache: {fileID: 0}
-  _componentConfiguration: 0
-  _synchronizeParent: 0
-  _packing:
-    Position: 1
-    Rotation: 1
-    Scale: 0
-  _interpolation: 2
-  _extrapolation: 2
-  _enableTeleport: 0
-  _teleportThreshold: 1
-  _clientAuthoritative: 1
-  _sendToOwner: 1
-  _interval: 1
-  _synchronizePosition: 1
-  _positionSensitivity: 0.001
-  _positionSnapping:
-    X: 0
-    Y: 0
-    Z: 0
-  _synchronizeRotation: 1
-  _rotationSnapping:
-    X: 0
-    Y: 0
-    Z: 0
-  _synchronizeScale: 1
-  _scaleSensitivity: 0.001
-  _scaleSnapping:
-    X: 0
-    Y: 0
-    Z: 0
+  objectToSpawn: {fileID: -6665617565329756496, guid: afc1a936370840b4b924ee7f8a0f8ae4, type: 3}
