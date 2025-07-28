@@ -6,6 +6,9 @@ public class Despawner : NetworkBehaviour
 {
 	private float _secondsToDespawn = 2f;
 
+	/// <summary>
+	/// This is called on the server when the object is initialized.
+	/// </summary>
 	public override void OnStartServer()
 	{
 		StartCoroutine(DespawnRoutine());

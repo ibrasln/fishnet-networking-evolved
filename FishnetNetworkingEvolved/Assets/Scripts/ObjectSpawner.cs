@@ -21,6 +21,8 @@ public class ObjectSpawner : NetworkBehaviour
 	private void SpawnObject()
 	{
 		NetworkObject networkObject = Instantiate(objectToSpawn, transform.position, Quaternion.identity);
+		networkObject.GetComponent<ColorChanger>().color.Value = Random.ColorHSV();
+
 		Spawn(networkObject); // NetworkBehaviour shortcut for ServerManager.Spawn(obj);
 	}
 }

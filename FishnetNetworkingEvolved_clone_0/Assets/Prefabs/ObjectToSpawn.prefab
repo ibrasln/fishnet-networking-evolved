@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -6665617565329756496}
   - component: {fileID: -524929834252944426}
   - component: {fileID: -1272069413819374154}
+  - component: {fileID: 6131605208157823341}
   m_Layer: 0
   m_Name: ObjectToSpawn
   m_TagString: Untagged
@@ -107,6 +108,7 @@ MonoBehaviour:
   <PredictedOwner>k__BackingField: {fileID: 0}
   NetworkBehaviours:
   - {fileID: -524929834252944426}
+  - {fileID: -1272069413819374154}
   InitializedParentNetworkBehaviour: {fileID: 0}
   InitializedNestedNetworkObjects: []
   RuntimeParentNetworkBehaviour: {fileID: 0}
@@ -165,6 +167,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 529b1c4c763d7674b8f9f3e936d6a3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 1
+  _addedNetworkObject: {fileID: -6665617565329756496}
+  _networkObjectCache: {fileID: -6665617565329756496}
+--- !u!114 &6131605208157823341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197661953048228771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b74a8264b0bc1d469828413c322b0a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 255
