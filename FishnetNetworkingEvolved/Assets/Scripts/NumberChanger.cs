@@ -43,9 +43,4 @@ public class NumberChanger : NetworkBehaviour
 		if (!IsOwner) return;
 		_textController.DecreaseNumber();
 	}
-
-	private void Update()
-	{
-		if (!IsOwner) return;
-	}
 }
